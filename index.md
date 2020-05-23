@@ -11,7 +11,7 @@ Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/
 
 
 
-<table id="ge_polls" class="display" data-page-length='25'>
+<table id="ge_polls" class="display" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
     {% for column in ge_polls[0] %}
         <th>{{ column[0] }}</th>
