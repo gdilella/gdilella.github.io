@@ -6,7 +6,7 @@ title: Italian Polls
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
-{% assign sondaggi=site.data.pulia_polls %}
+{% assign sondaggi=site.data.puglia_polls %}
 
 # Elezioni Regionali Puglia 2020
 
