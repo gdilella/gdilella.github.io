@@ -22,19 +22,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=2b212bfb5940e56a45b9ea2ad211b89ded8581e0">
+    <link rel="stylesheet" href="/assets/css/style.css?v=157d37e8059a1a85fc8739571a044fb6663c4c61">
   </head>
   <body>
     <header class="page-header" role="banner">
       <h1 class="project-name">Italian Polls</h1>
       <h2 class="project-tagline">Polls and averages for the next Italian Elections</h2>
-      <a href="https://gdilella.github.io/italy-polls/" class="btn">Home</a>
-      <a href="https://gdilella.github.io/italy-polls/puglia2020" class="btn">Puglia</a>
+      <a href="/" class="btn">Home</a>
+      <a href="/puglia2020" class="btn">Puglia</a>
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="elezioni-regionali-puglia-2020">Elezioni Regionali Puglia 2020</h1>
-<p>Work in progress</p>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" />
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+<h1 id="elezioni-regionali-puglia-2020">Elezioni Regionali Puglia 2020</h1>
+
+<table id="ge_polls" class="display" data-page-length="10" data-order="[[ 3, &quot;desc&quot; ]]">
+    <thead>
+    
+        <th>Sondaggista</th>
+    
+        <th>Committente</th>
+    
+        <th>Data iniziale</th>
+    
+        <th>Data finale</th>
+    
+        <th>Campione</th>
+    
+        <th>M5S</th>
+    
+        <th>PD</th>
+    
+        <th>SX</th>
+    
+        <th>Senso Civico + Articolo Uno</th>
+    
+        <th>FI</th>
+    
+        <th>Lega</th>
+    
+        <th>FdI</th>
+    
+        <th>IV+Azione</th>
+    
+        <th>Altro</th>
+    
+    </thead>
+    <tbody>
+    
+        <tr>
+        
+            <td>MG Research</td>
+        
+            <td>Gruppo consiliare M5S Puglia</td>
+        
+            <td>2020-02-04</td>
+        
+            <td>2020-02-10</td>
+        
+            <td>600</td>
+        
+            <td>25%-29%</td>
+        
+            <td>19%-23%</td>
+        
+            <td>6%-10%</td>
+        
+            <td>2%-6%</td>
+        
+            <td>5%-9%</td>
+        
+            <td>16%-20%</td>
+        
+            <td>6%-19%</td>
+        
+            <td>2%-6%</td>
+        
+            <td>1%-5%</td>
+        
+        </tr>
+    
+    </tbody>
+</table>
+
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#ge_polls').DataTable();
+} );
+</script>
+
 
 
       <footer class="site-footer">
