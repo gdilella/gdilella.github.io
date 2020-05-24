@@ -5,6 +5,7 @@
 {% assign ge_polls=site.data.ge_polls %}
 
 ![Image](trend.png)
+
 Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/italy/). Trend ottenuto tramite [LOWESS](https://en.wikipedia.org/wiki/Local_regression) 
 
 ![Image](voto.png)
@@ -28,6 +29,6 @@ Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/
 
 <script type="text/javascript">
 $(document).ready( function () {
-    $('#ge_polls').DataTable();
+    $('#ge_polls').DataTable({"ordering": false});
 } );
 </script>
