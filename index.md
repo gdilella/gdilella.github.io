@@ -2,22 +2,20 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
-{% assign ge_polls=site.data.ge_polls %}
+{% assign polls=site.data.ge_polls %}
 
-![Image](trend.png)
+<img src="trend.png" class="center"> 
 
-Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/italy/). Trend ottenuto tramite [LOWESS](https://en.wikipedia.org/wiki/Local_regression) 
+<img src="voto.png" class="center">
 
-![Image](voto.png)
-
-<table id="ge_polls" class="display" data-page-length='10' data-order='[[ 3, "desc" ]]'>
+<table id="polls" class="display" data-page-length='10' data-order='[[ 2, "desc" ]]'>
     <thead>
-    {% for column in ge_polls[0] %}
+    {% for column in polls[0] %}
         <th>{{ column[0] }}</th>
     {% endfor %}
     </thead>
     <tbody>
-    {% for row in ge_polls %}
+    {% for row in polls %}
         <tr>
         {% for cell in row %}
             <td>{{ cell[1] }}</td>
@@ -29,6 +27,11 @@ Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/
 
 <script type="text/javascript">
 $(document).ready( function () {
-    $('#ge_polls').DataTable({"ordering": false});
+    $('#polls').DataTable({
+        "ordering": false,
+        "searching": false,
+        "lengthChange": false});
 } );
 </script>
+
+Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/italy/). Trend ottenuto tramite [LOWESS](https://en.wikipedia.org/wiki/Local_regression) 
