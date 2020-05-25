@@ -1,23 +1,23 @@
+---
+title: Italian Polls
+---
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
-{% assign ge_polls=site.data.ge_polls %}
+{% assign sondaggi=site.data.liguria_polls %}
 
-![Image](trend.png)
+# Elezioni Regionali Liguria 2020
 
-Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/italy/). Trend ottenuto tramite [LOWESS](https://en.wikipedia.org/wiki/Local_regression) 
-
-![Image](voto.png)
-
-<table id="ge_polls" class="display" data-page-length='10' data-order='[[ 3, "desc" ]]'>
+<table id="polls" class="display" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
-    {% for column in ge_polls[0] %}
+    {% for column in sondaggi[0] %}
         <th>{{ column[0] }}</th>
     {% endfor %}
     </thead>
     <tbody>
-    {% for row in ge_polls %}
+    {% for row in sondaggi %}
         <tr>
         {% for cell in row %}
             <td>{{ cell[1] }}</td>
@@ -29,6 +29,6 @@ Fonte: Sondaggi presi da [Europe Elects](https://europeelects.eu/european-union/
 
 <script type="text/javascript">
 $(document).ready( function () {
-    $('#ge_polls').DataTable({"ordering": false});
+    $('#polls').DataTable();
 } );
 </script>
