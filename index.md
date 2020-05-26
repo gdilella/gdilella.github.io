@@ -8,7 +8,7 @@
 
 <img src="voto.png" class="center">
 
-<table id="polls" class="display" data-page-length='10' data-order='[[ 2, "desc" ]]'>
+<table id="polls" class="display compact" data-page-length='10' data-order='[[ 2, "desc" ]]' >
     <thead>
     {% for column in polls[0] %}
         <th>{{ column[0] }}</th>
@@ -18,7 +18,7 @@
     {% for row in polls %}
         <tr>
         {% for cell in row %}
-            <td>{{ cell[1] }}</td>
+            <td class="dt-body-center">{{ cell[1] }}</td>
         {% endfor %}
         </tr>
     {% endfor %}

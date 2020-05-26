@@ -20,7 +20,7 @@ title: Italian Polls
     {% for row in sondaggi %}
         <tr>
         {% for cell in row %}
-            <td>{{ cell[1] }}</td>
+            <td class="dt-body-center">{{ cell[1] }}</td>
         {% endfor %}
         </tr>
     {% endfor %}
@@ -29,6 +29,9 @@ title: Italian Polls
 
 <script type="text/javascript">
 $(document).ready( function () {
-    $('#ge_polls').DataTable();
+    $('#ge_polls').DataTable({
+        "ordering": false,
+        "searching": false,
+        "lengthChange": false});
 } );
 </script>

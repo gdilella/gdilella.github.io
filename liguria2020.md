@@ -10,7 +10,7 @@ title: Italian Polls
 
 # Elezioni Regionali Liguria 2020
 
-<table id="polls" class="display" data-page-length='10' data-order='[[ 3, "desc" ]]'>
+<table id="polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
     {% for column in sondaggi[0] %}
         <th>{{ column[0] }}</th>
@@ -20,7 +20,7 @@ title: Italian Polls
     {% for row in sondaggi %}
         <tr>
         {% for cell in row %}
-            <td>{{ cell[1] }}</td>
+            <td class="dt-body-center">{{ cell[1] }}</td>
         {% endfor %}
         </tr>
     {% endfor %}
@@ -29,6 +29,9 @@ title: Italian Polls
 
 <script type="text/javascript">
 $(document).ready( function () {
-    $('#polls').DataTable();
+    $('#polls').DataTable({
+        "ordering": false,
+        "searching": false,
+        "lengthChange": false});
 } );
 </script>
