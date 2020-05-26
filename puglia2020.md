@@ -10,7 +10,7 @@ title: Italian Polls
 
 # Elezioni Regionali Puglia 2020
 
-<table id="ge_polls" class="display" data-page-length='10' data-order='[[ 3, "desc" ]]'>
+<table id="ge_polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
     {% for column in sondaggi[0] %}
         <th>{{ column[0] }}</th>
