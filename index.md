@@ -4,9 +4,9 @@
 
 {% assign polls=site.data.ge_polls %}
 
-<img src="trend.png" class="center"> 
+<img src="trend.svg" class="center"> 
 
-<img src="voto.png" class="center">
+<img src="voto.svg" class="center">
 
 <table id="polls" class="display compact" data-page-length='10' data-order='[[ 2, "desc" ]]' >
     <thead>
