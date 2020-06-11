@@ -10,9 +10,35 @@
 
 <table id="polls" class="display compact" data-page-length='10' data-order='[[ 2, "desc" ]]' >
     <thead>
-    {% for column in polls[0] %}
-        <th>{{ column[0] }}</th>
-    {% endfor %}
+    <tr>
+    <th rowspan="2">Istituto</th>
+    <th rowspan="2">Committente</th>
+    <th rowspan="2">Pubblicato</th>
+    <th rowspan="2">Campione</th>
+    <th>M5S</th>
+    <th>PD</th>
+    <th>Lega</th>
+    <th>FI</th>
+    <th>FdI</th>
+    <th>Sinistra</th>
+    <th>+Europa</th>
+    <th>Verdi</th>
+    <th>Azione</th>
+    <th>IV</th>
+    <th rowspan="2">Altri</th>
+    </tr>
+    <tr>
+    <th style="background:#fae3a5;"></th>
+    <th style="background:#f47c8b;"></th>
+    <th style="background:#a8d291;"></th>
+    <th style="background:#afc9fd;"></th>
+    <th style="background:#3d6a99;"></th>
+    <th style="background:#f05b5b;"></th>
+    <th style="background:#fcbc7d;"></th>
+    <th style="background:#81de81;"></th>
+    <th style="background:#2a58b5;"></th>
+    <th style="background:#d173aa;"></th>
+    </tr>
     </thead>
     <tbody>
     {% for row in polls %}
