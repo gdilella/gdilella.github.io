@@ -10,51 +10,9 @@ title: Italian Polls
 
 # Elezioni Regionali Puglia 2020
 
-<img src="trend_puglia.png" class="center"> 
+<img src="prob_puglia.png" class="center"> 
 
-<table id="past_elections" class="display compact">
-<thead>
-    <tr>
-    <th rowspan="2">Elezioni</th>
-    <th>Centrosinistra</th>
-    <th>Centrodestra</th>
-    <th>Movimento 5 Stelle</th>
-    <th rowspan="2">Altri</th>
-    <th rowspan="2">Vantaggio</th>
-    </tr>
-    <tr>
-    <th style="background:#f47c8b;"></th>
-    <th style="background:#afc9fd;"></th>
-    <th style="background:#fae3a5;"></th>
-    </tr>
-</thead>
-<tbody>
-<tr>
-<td class="dt-body-center">Regionali 2015</td>
-<td class="dt-body-center">47,12</td>
-<td class="dt-body-center">14,40</td>
-<td class="dt-body-center">18,42</td>
-<td class="dt-body-center">20,06</td>
-<td class="dt-body-center" style="background:#f47c8b; color:white; font-weight: bold;">+27 Centrosinistra</td>
-</tr>
-<tr>
-<td class="dt-body-center">Politiche 2018</td>
-<td class="dt-body-center">16,10</td>
-<td class="dt-body-center">32,17</td>
-<td class="dt-body-center">44,94</td>
-<td class="dt-body-center">6,79</td>
-<td class="dt-body-center" style="background:#fae3a5; font-weight: bold;">+12 Movimento 5 Stelle</td>
-</tr>
-<tr>
-<td class="dt-body-center">Europee 2019</td>
-<td class="dt-body-center">24,6</td>
-<td class="dt-body-center">45,29</td>
-<td class="dt-body-center">26,29</td>
-<td class="dt-body-center">3,82</td>
-<td class="dt-body-center" style="background:#afc9fd; color:white; font-weight: bold;">+19 Centrodestra</td>
-</tr>
-</tbody>
-</table>
+<img src="trend_puglia.png" class="center"> 
 
 <table id="ge_polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
@@ -96,12 +54,5 @@ $(document).ready( function () {
         "lengthChange": false,
         "paging":   false,
         "info":     false});
-        
-    $('#past_elections').DataTable({
-        "ordering": false,
-        "searching": false,
-        "lengthChange": false,
-        "paging":   false,
-        "info":     false});
-});
+        });
 </script>
