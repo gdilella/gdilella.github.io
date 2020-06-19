@@ -10,8 +10,6 @@ title: Italian Polls
 
 # Elezioni Regionali Puglia 2020
 
-<img src="prob_puglia.png" class="center"> 
-
 <img src="trend_puglia.png" class="center"> 
 
 <table id="ge_polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
