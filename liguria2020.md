@@ -8,7 +8,7 @@ title: Italian Polls
 
 {% assign sondaggi=site.data.liguria_polls %}
 
-# Elezioni Regionali Liguria 2020
+<center> <h1> Elezioni Regionali Liguria 2020 </h1> </center>
 
 <table id="polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
