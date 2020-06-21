@@ -53,6 +53,8 @@ title: Italian Polls
 </table>
 </center>
 
+**Come funziona:** I sondaggi dei vari istituti sono comparati alla linea di trend calcolata da Italian Polls e la mediana degli "errori" rappresenta il bias dell'istituto verso un dato partito
+
 
 <script type="text/javascript">
 $(document).ready( function () {
