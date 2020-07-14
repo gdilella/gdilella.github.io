@@ -22,7 +22,7 @@ title: Italian Polls
     <th rowspan="2">Campione</th>
     <th>Emiliano</th>
     <th>Fitto</th>
-    <th>Bellanova</th>
+    <th>Scalfarotto</th>
     <th>Laricchia</th>
     <th rowspan="2">Altri</th>
     </tr>
