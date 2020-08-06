@@ -8,9 +8,11 @@ title: Italian Polls
 
 {% assign sondaggi=site.data.puglia_polls %}
 
-<center> <h1> Elezioni Regionali Puglia 2020 </h1> </center>
+<h1 class="center"> Elezioni Regionali Puglia 2020 </h1>
 
-<img src="trend_puglia.png" class="center"> 
+<img src="prob_puglia.svg" class="center">
+
+<img src="trend_puglia.svg" class="center"> 
 
 <table id="ge_polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
