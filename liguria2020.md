@@ -8,7 +8,11 @@ title: Italian Polls
 
 {% assign sondaggi=site.data.liguria_polls %}
 
-<center> <h1> Elezioni Regionali Liguria 2020 </h1> </center>
+<h1> Elezioni Regionali Liguria 2020 </h1>
+
+<img src="prob_Liguria.svg" class="center">
+
+<img src="trend_Liguria.svg" class="center"> 
 
 <table id="polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
