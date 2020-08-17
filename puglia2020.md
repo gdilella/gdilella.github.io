@@ -46,6 +46,9 @@ title: Italian Polls
     </tbody>
 </table>
 
+**Come Funziona?** Il modello simula 20000 elezioni basandosi sulle medie dei sondaggi regionali e su quanta incertezza storicamente ci sia sui risultati elettorali partendo dalle medie dei sondaggi. Tutti i risultati delle simulazioni vengono mostrati nel grafico centrale dove più è alta la barra più è probabile il risultato di un dato candidato.
+(Attenzione però, i risultati ai bordi, per quanto improbabili sono comunque possibili!)
+
 <script type="text/javascript">
 $(document).ready( function () {
     $('#ge_polls').DataTable({
