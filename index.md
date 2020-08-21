@@ -4,9 +4,8 @@
 
 {% assign polls=site.data.ge_polls %}
 
-<img src="trend.svg" class="center"> 
-
-<img src="voto.svg" class="center">
+<iframe title="Trend Sondaggi Politici" aria-label="Interactive line chart" id="datawrapper-chart-7gof7" src="https://datawrapper.dwcdn.net/7gof7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
 
 <table id="polls" class="display compact" data-page-length='10' data-order='[[ 2, "desc" ]]' >
     <thead>
