@@ -1,5 +1,5 @@
 ---
-title: Italian Polls
+title: Italian Polls - Liguria 2020
 ---
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -8,11 +8,9 @@ title: Italian Polls
 
 {% assign sondaggi=site.data.liguria_polls %}
 
-<h1> Elezioni Regionali Liguria 2020 </h1>
+<img src="images/prob_Liguria.svg" class="center">
 
-<img src="prob_Liguria.svg" class="center">
-
-<img src="trend_Liguria.svg" class="center"> 
+<img src="images/trend_Liguria.svg" class="center">
 
 <table id="polls" class="display compact" data-page-length='10' data-order='[[ 3, "desc" ]]'>
     <thead>
